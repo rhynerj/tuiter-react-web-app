@@ -15,15 +15,10 @@
 </head>
 
 <body>
-    <!-- TODO:
-    Make column sizes specific to screen size
-    Make content disappear based on screen size
- -->
 
-    <!-- Use the Bootstrap grid system to layout the explore screen into a 
-        single row with three columns -->
-    <div class="container-fluid m-0 pt-3 w-100">
+    <div class="container-fluid m-0 pt-3 pb-3 w-100">
         <div class="row">
+
             <div class="col-2 col-md-1 col-xxl-2 col-xl-3">
                 <div class="list-group">
                     <a href="../navigation.html" class="list-group-item list-group-item-action">
@@ -97,33 +92,13 @@
                 </div>
                 <button type="submit" class="btn btn-primary rounded-pill w-100 mt-2"> Tuit </button>
             </div>
-            <div class="col-9 col-md-10 col-lg-6 col-xxl-7">
-                <!-- Main -->
-                <!-- 
-                    1. At the top of the center column, use the Bootstrap input fields and Bootstrap 
-                    radius classes to implement the search field. Use Fontawesome icons for the 
-                    magnifying glass and gear icons.
-                    2. Below the search input field, use the Bootstrap tabs to implement 
-                    the For You, Trending, News, Sports, and Entertainment tabs. The first
-                     tab should be selected as shown
-                    3. Under the tabs, in the center column, implement the image as shown with a 
-                    white text overlaid the image. Feel free to use an image and text of your choice. 
-                    Feel free to reuse any CSS you might have written for explore-css.html
-                    4. Under the image, in the center column, use Bootstrap lists to implement a list 
-                    of tuits as shown in the wireframe
-                    5. For each tuit, use the Bootstrap grid system to layout the tuits as row of 
-                    two columns
-                        a. On the left column render the tuit's text
-                        b. On the right column render the images and/or icons as shown as squares 
-                        and rounded corners
 
-                 -->
+            <div class="col-9 col-md-10 col-lg-6 col-xxl-7">
                 <!-- <div class="mb-2 position-relative">
                     <span class="fas fa-search position-absolute top-12 left-12"></span>
                     <input placeholder="Search Tuiter" class="ps-5 rounded-pill form-control" />
                     <span class="fas fa-cog position-absolute top-6 ms-2 start-100 text-primary fs-3"></span>
                 </div> -->
-
                 <div class="mb-2 position-relative">
                     <div class="width-95">
                         <span class="fas fa-search position-absolute top-12 left-12"></span>
@@ -190,7 +165,7 @@
                                 </div>
                                 <div class="fw-bold">
                                     React.js is a component based front end library that makes it very
-                                    easy to build Single Page Applications of SPAs
+                                    easy to build Single Page Applications or SPAs
                                 </div>
                             </div>
                             <div class="col-3 d-flex justify-content-end align-items-center">
@@ -264,6 +239,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="d-none d-lg-block col-lg-4 col-xl-3">
                 <ul class="list-group">
                     <li class="list-group-item">
@@ -371,5 +347,4 @@
     </div>
 
 </body>
-
 </html>
