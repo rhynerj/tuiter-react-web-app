@@ -1,0 +1,123 @@
+html * {
+    font-family: Arial;
+}
+
+table td,
+table td * {
+    vertical-align: top;
+}
+
+
+.wd-pos-relative {
+    position: relative;
+}
+
+.wd-pos-absolute-top-left {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.wd-pos-absolute-top {
+    position: absolute;
+    top: 30px;
+}
+
+.wd-padded {
+    padding: 20px;
+}
+
+.wd-padded-thin {
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.wd-horizontal-padding {
+    padding-right: 5%;
+}
+
+.wd-no-bullet-list {
+    padding-left: 0;
+}
+
+.wd-no-bullet-list li {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-left: 0;
+    margin: 0;
+}
+
+.wd-standard-link {
+    text-decoration: none;
+    font-weight: 525;
+    color: rgb(141, 141, 141);
+    padding-bottom: 20px;
+}
+
+.wd-inline-link {
+    text-decoration: none;
+}
+
+.wd-inline-list li {
+    display: inline;
+    padding: 15px;
+    line-height: 50px;
+}
+
+.wd-main-image {
+    width: 100%;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-width-90 {
+    width: 90%;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-tuit-main {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.wd-tuit-details {
+    color: rgb(141, 141, 141);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.wd-tuit-user {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.wd-tuit-text {
+    color: black;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.wd-page-title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.wd-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}

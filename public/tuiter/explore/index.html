@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--Vendors-->
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <!--Custom-->
+    <!-- <link href="../styles.css" rel="stylesheet" /> -->
+    <link href="index.css" rel="stylesheet" />
+
+    <title>Explore</title>
+</head>
+
+<body>
+    <!-- Use the Bootstrap grid system to layout the explore screen into a 
+        single row with three columns -->
+    <div class="container-fluid m-0 pt-3 w-100">
+        <div class="row">
+            <div class="col-3">
+                <div class="list-group">
+                    <a href="../navigation.html" class="list-group-item list-group-item-action">
+                        <span class="fab fa-twitter"></span>
+                    </a>
+                    <a href="../home.html" class="list-group-item list-group-item-action">
+                        <span class="fas fa-home"></span>&ensp;<span>Home</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <span class="fas fa-hashtag"></span>&ensp;<span>Explore</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="fas fa-bell"></span>&ensp;<span>Notifications</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="fas fa-envelope"></span>&ensp;<span>Messages</span>
+                    </a>
+                    <a href="../bookmarks/bookmarks-css.html" class="list-group-item list-group-item-action">
+                        <span class="fas fa-bookmark"></span>&ensp;<span>Bookmarks</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="fas fa-list"></span>&ensp;<span>Lists</span>
+                    </a>
+                    <a href="../profile.html" class="list-group-item list-group-item-action">
+                        <span class="fas fa-user"></span>&ensp;<span>Profile</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="fas fa-minus-circle"></span>&ensp;<span>More</span>
+                    </a>
+                </div>
+                <button type="submit" class="btn btn-primary rounded-pill w-100 mt-2"> Tuit </button>
+            </div>
+            <div class="col-6">
+                <!-- Main -->
+                <!-- 
+                    1. At the top of the center column, use the Bootstrap input fields and Bootstrap 
+                    radius classes to implement the search field. Use Fontawesome icons for the 
+                    magnifying glass and gear icons.
+                    2. Below the search input field, use the Bootstrap tabs to implement 
+                    the For You, Trending, News, Sports, and Entertainment tabs. The first
+                     tab should be selected as shown
+                    3. Under the tabs, in the center column, implement the image as shown with a 
+                    white text overlaid the image. Feel free to use an image and text of your choice. 
+                    Feel free to reuse any CSS you might have written for explore-css.html
+                    4. Under the image, in the center column, use Bootstrap lists to implement a list 
+                    of tuits as shown in the wireframe
+                    5. For each tuit, use the Bootstrap grid system to layout the tuits as row of 
+                    two columns
+                        a. On the left column render the tuit's text
+                        b. On the right column render the images and/or icons as shown as squares 
+                        and rounded corners
+
+                 -->
+                <div class="mb-2 position-relative">
+                    <span class="fas fa-search position-absolute top-12 left-12"></span>
+                    <input placeholder="Search Tuiter" class="ps-5 rounded-pill form-control" />
+                    <span class="fas fa-cog position-absolute top-6 ms-2 start-100 text-primary fs-3"></span>
+                </div>
+                <ul class="nav nav-tabs mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            For You
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Trending
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            News
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Sport
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Entertainment
+                        </a>
+                    </li>
+                </ul>
+                <div class="position-relative">
+                    <img class="img-fluid" src="../../images/andromeda.jpeg" />
+                    <h3 class="wd-text-overlay">Exploring the Andromeda Galaxy</h3>
+                </div>
+                <ul class="list-group">
+                    <!-- <li class="list-group-item">
+                        <span class="float-start">
+                            <div class="text-secondary">Test 1</div>
+                            <div>
+                                <span class="fw-bold fs-5">Test 2</span>
+                                <span class="text-secondary"> - 2h</span>
+                            </div>
+                            <div class="fw-bold">Test 3</div>
+                        </span>
+                        <span class="float-end w-25">
+                            <img class="img-fluid rounded" src="../../images/nasa.png">
+                        </span>
+                    </li> -->
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="text-secondary">Web Development</div>
+                                <div>
+                                    <span class="fw-bold fs-5">
+                                        ReactJS
+                                        <span class="fas fa-check-circle"></span>
+                                    </span>
+                                    <span class="text-secondary"> - 2h</span>
+                                </div>
+                                <div class="fw-bold">
+                                    React.js is a component based front end library that makes it very
+                                    easy to build Single Page Applications of SPAs
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end align-items-center">
+                                <div class="square-box">
+                                    <img class="img-fluid rounded" src="../../logo192.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-9">
+                                <div>
+                                    <span class="fw-bold fs-5">
+                                        NASA
+                                        <span class="fas fa-check-circle"></span>
+                                    </span>
+                                    <span class="text-secondary"> - 2h</span>
+                                </div>
+                                <div class="fw-bold">
+                                    The National Aeronautics and Space Administration, commonly referred to as NASA,
+                                    is an independent agency of the U.S. federal government responsible for the
+                                    civil space program, aeronautics research, and space research
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end align-items-center">
+                                <div class="square-box">
+                                    <img class="img-fluid rounded" src="../../images/nasa.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="text-secondary">Web Development</div>
+                                <div>
+                                    <span class="fw-bold fs-5">
+                                        JavaScript
+                                        <span class="fas fa-check-circle"></span>
+                                    </span>
+                                    <span class="text-secondary"> - 2h</span>
+                                </div>
+                                <div class="text-secondary">123K Tuits</div>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end align-items-center">
+                                <div class="square-box">
+                                    <img class="img-fluid rounded" src="../../images/javascript.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="text-secondary">Sports Movies</div>
+                                <div>
+                                    <span class="fw-bold fs-5">
+                                        Airbud
+                                    </span>
+                                    <span class="text-secondary"> - 2h</span>
+                                </div>
+                                <div class="text-secondary">999M Tuits</div>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end align-items-center">
+                                <div class="square-box">
+                                    <img class="img-fluid rounded" src="../../images/buddy.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 ps-5">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="fw-bold">Who to follow</div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="rounded-circle icon-size" src="../../images/nasa.png" />
+                            </div>
+                            <div class="col">
+                                <div class="fw-bold">
+                                    NASA
+                                    <span class="fas fa-check-circle"></span>
+                                </div>
+                                <div>
+                                    @NASA
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary rounded-pill w-100">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="rounded-circle icon-size" src="../../images/java.jpeg" />
+                            </div>
+                            <div class="col">
+                                <div class="fw-bold">
+                                    Java
+                                    <span class="fas fa-check-circle"></span>
+                                </div>
+                                <div>
+                                    @Java
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary rounded-pill w-100">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="rounded-circle icon-size" src="../../images/ikea.jpeg" />
+                            </div>
+                            <div class="col">
+                                <div class="fw-bold">
+                                    IKEA
+                                    <span class="fas fa-check-circle"></span>
+                                </div>
+                                <div>
+                                    @IKEA
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary rounded-pill w-100">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="rounded-circle icon-size" src="../../images/gilbert.jpeg" />
+                            </div>
+                            <div class="col">
+                                <div class="fw-bold">
+                                    Gilbert
+                                    <span class="fas fa-check-circle"></span>
+                                </div>
+                                <div>
+                                    @gilbert
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary rounded-pill w-100">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="rounded-circle icon-size" src="../bob.jpeg" />
+                            </div>
+                            <div class="col">
+                                <div class="fw-bold">
+                                    Bob
+                                    <span class="fas fa-check-circle"></span>
+                                    <span class="fas fa-check-circle"></span>
+                                </div>
+                                <div>
+                                    @bob2
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary rounded-pill w-100">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

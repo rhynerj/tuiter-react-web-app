@@ -1,0 +1,24 @@
+.wd-bookmarked-tuit {
+    border-bottom: 0.5px solid rgb(209, 209, 209);
+}
+
+.wd-image-card {
+    border-radius: 20px;
+    border: 0.5px solid rgb(209, 209, 209);
+    width: 100%;
+    padding: 0;
+}
+
+.wd-image-card-image {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+.wd-image-card-text {
+    padding: 12px;
+}
+
+.wd-red-text {
+    color: rgb(255, 0, 98);
+}
