@@ -15,43 +15,89 @@
 </head>
 
 <body>
+    <!-- TODO:
+    Make column sizes specific to screen size
+    Make content disappear based on screen size
+ -->
+
     <!-- Use the Bootstrap grid system to layout the explore screen into a 
         single row with three columns -->
     <div class="container-fluid m-0 pt-3 w-100">
         <div class="row">
-            <div class="col-3">
+            <div class="col-2 col-md-1 col-xxl-2 col-xl-3">
                 <div class="list-group">
                     <a href="../navigation.html" class="list-group-item list-group-item-action">
                         <span class="fab fa-twitter"></span>
                     </a>
                     <a href="../home.html" class="list-group-item list-group-item-action">
-                        <span class="fas fa-home"></span>&ensp;<span>Home</span>
+                        <div class="d-block d-xl-none">
+                            <span class="fas fa-home"></span>
+                        </div>
+                        <div class="d-none d-xl-block">
+                            <span class="fas fa-home"></span>&ensp;<span>Home</span>
+                        </div>
+
                     </a>
                     <a href="#" class="list-group-item list-group-item-action active">
-                        <span class="fas fa-hashtag"></span>&ensp;<span>Explore</span>
+                        <div class="d-block d-xl-none">
+                            <span class="fas fa-hashtag"></span>
+                        </div>
+                        <div class="d-none d-xl-block">
+                            <span class="fas fa-hashtag"></span>&ensp;<span>Explore</span>
+                        </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                        <span class="fas fa-bell"></span>&ensp;<span>Notifications</span>
+                        <div class="d-block d-xl-none">
+                            <span class="fas fa-bell"></span>
+                        </div>
+                        <div class="d-none d-xl-block">
+                            <span class="fas fa-bell"></span>&ensp;<span>Notifications</span>
+                        </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                        <span class="fas fa-envelope"></span>&ensp;<span>Messages</span>
+                        <div class="d-block d-xl-none">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                        <div class="d-none d-xl-block">
+                            <span class="fas fa-envelope"></span>&ensp;<span>Messages</span>
+                        </div>
                     </a>
                     <a href="../bookmarks/bookmarks-css.html" class="list-group-item list-group-item-action">
-                        <span class="fas fa-bookmark"></span>&ensp;<span>Bookmarks</span>
+                        <div class="d-block d-xl-none">
+                            <span class="fas fa-bookmark"></span>
+                        </div>
+                        <div class="d-none d-xl-block">
+                            <span class="fas fa-bookmark"></span>&ensp;<span>Bookmarks</span>
+                        </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                        <span class="fas fa-list"></span>&ensp;<span>Lists</span>
+                        <div class="d-block d-xl-none">
+                            <span class="fas fa-list"></span>
+                        </div>
+                        <div class="d-none d-xl-block">
+                            <span class="fas fa-list"></span>&ensp;<span>Lists</span>
+                        </div>
                     </a>
                     <a href="../profile.html" class="list-group-item list-group-item-action">
-                        <span class="fas fa-user"></span>&ensp;<span>Profile</span>
+                        <div class="d-block d-xl-none">
+                            <span class="fas fa-user"></span>
+                        </div>
+                        <div class="d-none d-xl-block">
+                            <span class="fas fa-user"></span>&ensp;<span>Profile</span>
+                        </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                        <span class="fas fa-minus-circle"></span>&ensp;<span>More</span>
+                        <div class="d-block d-xl-none">
+                            <span class="fas fa-minus-circle"></span>
+                        </div>
+                        <div class="d-none d-xl-block">
+                            <span class="fas fa-minus-circle"></span>&ensp;<span>More</span>
+                        </div>
                     </a>
                 </div>
                 <button type="submit" class="btn btn-primary rounded-pill w-100 mt-2"> Tuit </button>
             </div>
-            <div class="col-6">
+            <div class="col-9 col-md-10 col-lg-8 col-xxl-7 col-xl-6">
                 <!-- Main -->
                 <!-- 
                     1. At the top of the center column, use the Bootstrap input fields and Bootstrap 
@@ -99,7 +145,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link d-none d-md-block" href="#">
                             Entertainment
                         </a>
                     </li>
@@ -209,17 +255,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-3 ps-5">
+            <div class="d-none d-lg-block col-lg-3 ps-5">
                 <ul class="list-group">
                     <li class="list-group-item">
                         <div class="fw-bold">Who to follow</div>
                     </li>
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-lg-3 col-xxl-2">
                                 <img class="rounded-circle icon-size" src="../../images/nasa.png" />
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6 col-xl-4 col-xxl-5">
                                 <div class="fw-bold">
                                     NASA
                                     <span class="fas fa-check-circle"></span>
@@ -229,16 +275,16 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <button type="submit" class="btn btn-primary rounded-pill w-100">Follow</button>
+                                <button type="submit" class="btn btn-primary rounded-pill w-100 mt-2">Follow</button>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-lg-3 col-xxl-2">
                                 <img class="rounded-circle icon-size" src="../../images/java.jpeg" />
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6 col-xl-4 col-xxl-5">
                                 <div class="fw-bold">
                                     Java
                                     <span class="fas fa-check-circle"></span>
@@ -248,16 +294,16 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <button type="submit" class="btn btn-primary rounded-pill w-100">Follow</button>
+                                <button type="submit" class="btn btn-primary rounded-pill w-100 mt-2">Follow</button>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-lg-3 col-xxl-2">
                                 <img class="rounded-circle icon-size" src="../../images/ikea.jpeg" />
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6 col-xl-4 col-xxl-5">
                                 <div class="fw-bold">
                                     IKEA
                                     <span class="fas fa-check-circle"></span>
@@ -267,16 +313,16 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <button type="submit" class="btn btn-primary rounded-pill w-100">Follow</button>
+                                <button type="submit" class="btn btn-primary rounded-pill w-100 mt-2">Follow</button>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-lg-3 col-xxl-2">
                                 <img class="rounded-circle icon-size" src="../../images/gilbert.jpeg" />
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6 col-xl-4 col-xxl-5">
                                 <div class="fw-bold">
                                     Gilbert
                                     <span class="fas fa-check-circle"></span>
@@ -286,16 +332,16 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <button type="submit" class="btn btn-primary rounded-pill w-100">Follow</button>
+                                <button type="submit" class="btn btn-primary rounded-pill w-100 mt-2">Follow</button>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-lg-3 col-xxl-2">
                                 <img class="rounded-circle icon-size" src="../bob.jpeg" />
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6 col-xl-4 col-xxl-5">
                                 <div class="fw-bold">
                                     Bob
                                     <span class="fas fa-check-circle"></span>
@@ -306,7 +352,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <button type="submit" class="btn btn-primary rounded-pill w-100">Follow</button>
+                                <button type="submit" class="btn btn-primary rounded-pill w-100 mt-2">Follow</button>
                             </div>
                         </div>
                     </li>
