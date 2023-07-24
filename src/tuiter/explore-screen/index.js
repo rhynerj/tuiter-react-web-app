@@ -30,10 +30,10 @@ function ExploreScreen() {
                     <a className="nav-link" href="#/tuiter/explore">News</a>
                 </li>
             </ul>
-            <div className="position-relative mb-2">
+            <div className="position-relative">
                 <img src="../images/andromeda.jpeg" className="img-fluid" alt="the andromeda galaxy"/>
-                <h1 className="wd-text-overlay">
-                    Exploring the Andromeda Galaxy</h1>
+                <h3 className="wd-text-overlay">
+                    Exploring the Andromeda Galaxy</h3>
             </div>
             <TuitSummaryList />
         </div>

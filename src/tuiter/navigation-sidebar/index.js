@@ -65,9 +65,9 @@ const NavigationSidebar = () => {
         //     )}
         // </div>
         <div className="list-group">
-            <div className="list-group-item">
+            <Link to={`/tuiter`} className="list-group-item">
                 <FaTwitter />
-            </div>
+            </Link>
             <div className="d-none d-xl-block">{widebar}</div>
             <div className="d-block d-xl-none">{narrowbar}</div>
         </div>
