@@ -1,14 +1,13 @@
 import React from "react";
-import './index.css'
 
 const TuitSummaryItem = (
     {
         tuit = {
-            "topic": '',
-            "userName": '',
-            "time": '',
-            "title": '',
-            "image": ''
+            "topic": "",
+            "userName": "",
+            "time": "",
+            "title": "",
+            "image": ""
         }
     }
 ) => {

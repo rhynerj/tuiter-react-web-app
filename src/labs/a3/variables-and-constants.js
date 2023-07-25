@@ -5,7 +5,7 @@ function VariablesAndConstants() {
 
     return (
         <div>
-            {/* <h1>JavaScript</h1> */}
+            <h1>JavaScript</h1>
             <h2>Variables and Constants</h2>
             functionScoped = {functionScoped}<br />
             blockScoped = {blockScoped}<br />

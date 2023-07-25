@@ -26,4 +26,4 @@ const WhoToFollowListItem = (
     );
 }
 
-export default WhoToFollowListItem;
+export default WhoToFollowListItem

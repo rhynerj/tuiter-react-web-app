@@ -1,7 +1,7 @@
 import React from "react";
-import tuitsArray from './tuits.json';
+import tuitsArray from "./tuits.json";
 import TuitSummaryItem from "./tuit-summary-item";
-import './index.css';
+import "./index.css";
 
 const TuitSummaryList = () => {
     return (
