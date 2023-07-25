@@ -1,0 +1,6 @@
+.wd-square-box {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    line-height: 100px;
+}
