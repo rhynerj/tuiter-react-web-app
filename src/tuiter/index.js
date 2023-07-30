@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router";
 import Nav from '../nav';
 import NavigationSidebar from "./navigation-sidebar";
-import HomeScreen from "./home-screen";
+import HomeScreen from "./home";
 import ExploreScreen from "./explore-screen";
 import NotificationsScreen from "./notifications-screen";
 import MessagesScreen from "./messages-screen";
