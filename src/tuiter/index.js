@@ -8,16 +8,24 @@ import NotificationsScreen from "./notifications-screen";
 import MessagesScreen from "./messages-screen";
 import BookmarksScreen from "./bookmarks-screen";
 import ListsScreen from "./lists-screen";
-import ProfileScreen from "./profile-screen";
+import ProfileScreen from "./user/profile-screen";
+import LoginScreen from "./user/login-screen";
+import RegisterScreen from "./user/register-screen";
 import MoreScreen from "./more-screen";
 import WhoToFollowList from "./who-to-follow-list";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
 import { configureStore } from '@reduxjs/toolkit';
-import {Provider} from "react-redux";
+import { Provider } from "react-redux";
+import authReducer from "./reducers/auth-reducer";
 
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}}
+    {
+        reducer: {
+            who: whoReducer, tuits: tuitsReducer,
+            user: authReducer
+        },
+    }
 );
 
 function Tuiter() {
@@ -39,10 +47,12 @@ function Tuiter() {
                             <Route path="/lists" element={<ListsScreen />} />
                             <Route path="/profile" element={<ProfileScreen />} />
                             <Route path="/more" element={<MoreScreen />} />
+                            <Route path="/login" element={<LoginScreen />} />
+                            <Route path="/register" element={<RegisterScreen />} />
                         </Routes>
                     </div>
                     <div className="d-none d-lg-block col-lg-4 col-xl-3">
-                       <WhoToFollowList />
+                        <WhoToFollowList />
                     </div>
                 </div>
             </div>

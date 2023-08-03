@@ -1,21 +1,11 @@
 import React from "react";
 
-const TuitSummaryItem = (
-    {
-        tuit = {
-            "topic": "",
-            "userName": "",
-            "time": "",
-            "title": "",
-            "image": ""
-        }
-    }
-) => {
+const TuitSummaryItem = ({ tuit }) => {
     return (
         <li className="list-group-item">
             <div className="row">
                 <div className="col-9">
-                    <div>{tuit.userName} - {tuit.time}</div>
+                    <div>{tuit.username} - {tuit.time}</div>
                     <div className="fw-bolder">{tuit.topic}</div>
                     <div>{tuit.title}</div>
                 </div>
