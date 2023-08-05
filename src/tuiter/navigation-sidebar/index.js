@@ -1,27 +1,49 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { FaTwitter } from "react-icons/fa";
-import { FaHome } from "react-icons/fa";
-import { FaHashtag } from "react-icons/fa";
-import { FaBell } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
-import { FaBookmark } from "react-icons/fa";
-import { FaList } from "react-icons/fa";
-import { FaUser } from "react-icons/fa";
-import { HiEllipsisHorizontalCircle } from "react-icons/hi2";
+import {
+    FaTwitter,
+    FaHome,
+    FaHashtag,
+    FaBell,
+    FaEnvelope,
+    FaBookmark,
+    FaList,
+    FaUser
+}
+    from "react-icons/fa";
+import { BiSolidPlusCircle, BiSolidLogInCircle } from "react-icons/bi";
+// import { FaHome } from "react-icons/fa";
+// import { FaHashtag } from "react-icons/fa";
+// import { FaBell } from "react-icons/fa";
+// import { FaEnvelope } from "react-icons/fa";
+// import { FaBookmark } from "react-icons/fa";
+// import { FaList } from "react-icons/fa";
+// import { FaUser } from "react-icons/fa";
 
 const NavigationSidebar = () => {
     const { currentUser } = useSelector((state) => state.user);
     const { pathname } = useLocation();
     const active = pathname.split("/")[2];
-    const links = ["home", "explore", "notifications", "messages", "bookmarks", "lists", "profile", "more"];
-    const icons = [<FaHome />, <FaHashtag />, <FaBell />, <FaEnvelope />, <FaBookmark />, <FaList />, <FaUser />, <HiEllipsisHorizontalCircle />]
+    const links = ["home", "explore", "notifications", "messages", "bookmarks", "lists", "profile", "login", "register"];
+    const icons = [<FaHome />, <FaHashtag />, <FaBell />, <FaEnvelope />, <FaBookmark />, <FaList />, <FaUser />, <BiSolidLogInCircle />, <BiSolidPlusCircle />]
 
     const widebar = links.map((link, index) => {
         const icon = icons[index];
+
+        let show = true;
+        if (currentUser) {
+            if (link === "login" || link === "register") {
+                show = false;
+            }
+        } else {
+            if (link === "profile") {
+                show = false;
+            }
+        }
+
         return (
-            <Link key={link} to={`/tuiter/${link}`}
+            show && <Link key={link} to={`/tuiter/${link}`}
                 className={`list-group-item text-capitalize ${active === link ? "active" : ""}`}>
                 {icon} {link}
             </Link>
@@ -30,8 +52,20 @@ const NavigationSidebar = () => {
 
     const narrowbar = links.map((link, index) => {
         const icon = icons[index];
+
+        let show = true;
+        if (currentUser) {
+            if (link === "login" || link === "register") {
+                show = false;
+            }
+        } else {
+            if (link === "profile") {
+                show = false;
+            }
+        }
+
         return (
-            <Link key={link} to={`/tuiter/${link}`}
+            show && <Link key={link} to={`/tuiter/${link}`}
                 className={`list-group-item ${active === link ? "active" : ""}`}>
                 {icon}
             </Link>
@@ -74,11 +108,11 @@ const NavigationSidebar = () => {
                 <div className="d-none d-xl-block">{widebar}</div>
                 <div className="d-block d-xl-none">{narrowbar}</div>
             </div>
-            <div className="list-group">
+            {/* <div className="list-group">
                 {!currentUser && <Link className="list-group-item" to='/tuiter/login'>Login</Link>}
                 {!currentUser && <Link className="list-group-item" to='/tuiter/register'>Register</Link>}
                 {currentUser && <Link className="list-group-item" to='/tuiter/profile'>Profile</Link>}
-            </div>
+            </div> */}
         </div>
     );
 }
