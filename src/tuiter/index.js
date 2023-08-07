@@ -45,10 +45,10 @@ function Tuiter() {
                             <Route path="/messages" element={<MessagesScreen />} />
                             <Route path="/bookmarks" element={<BookmarksScreen />} />
                             <Route path="/lists" element={<ListsScreen />} />
-                            <Route path="/profile" element={<ProfileScreen />} />
                             <Route path="/more" element={<MoreScreen />} />
                             <Route path="/login" element={<LoginScreen />} />
                             <Route path="/register" element={<RegisterScreen />} />
+                            <Route path="/profile" element={<ProfileScreen />} />
                         </Routes>
                     </div>
                     <div className="d-none d-lg-block col-lg-4 col-xl-3">
