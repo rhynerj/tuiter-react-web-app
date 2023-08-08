@@ -4,9 +4,7 @@ import axios from "axios";
 // const TUITS_API = 'https://tuiter-node-server-app-j41j.onrender.com/api/tuits';
 
 const API_BASE = process.env.REACT_APP_SERVER_API_URL;
-
 const TUITS_API = `${API_BASE}/tuits`;
-console.log(TUITS_API)
 
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit);
@@ -15,7 +13,6 @@ export const createTuit = async (tuit) => {
 export const findTuits = async () => {
     const response = await axios.get(TUITS_API);
     const tuits = response.data;
-    console.log(tuits)
     return tuits;
 }
 export const deleteTuit = async (tid) => {

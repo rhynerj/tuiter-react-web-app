@@ -21,13 +21,13 @@ function RegisterScreen() {
         <div>
             <h1>Register Screen</h1>
             <div className="mt-2">
-                <label>Username</label>
-                <input className="form-control" type="text" value={username}
+                <label for="username">Username</label>
+                <input id="username" className="form-control" type="text" placeholder="Enter username"
                     onChange={(event) => setUsername(event.target.value)} />
             </div>
             <div className="mt-2">
-                <label>Password</label>
-                <input className="form-control" type="text" value={password}
+                <label for="password">Password</label>
+                <input id="password" className="form-control" type="password" placeholder="Enter password"
                     onChange={(event) => setPassword(event.target.value)} />
             </div>
             <button className="btn btn-primary mt-2"
